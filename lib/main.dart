@@ -69,6 +69,7 @@ class MyHomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Stack(
+                alignment: Alignment(1.3, 1.3),
                 children: <Widget>[
                   Container(
                     margin: EdgeInsets.only(top: 50, left: 40),
@@ -99,13 +100,10 @@ class MyHomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Positioned(
-                      top: 340,
-                      left: 770,
-                      child: Image.asset(
-                        "assets/sticker.png",
-                        scale: 1.3,
-                      )),
+                  Image(
+                      image: AssetImage(
+                    "assets/sticker.png",
+                  )),
                 ],
               ),
             ],
